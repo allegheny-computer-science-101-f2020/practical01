@@ -311,6 +311,6 @@ office hours.
 
 The grade that a student receives on this practical assignment is a checkmark grade (0 or 1) and is based on:
 
-- **Percentage of Correct Gatorgrader Checks**: Students will receive 1 if their solution passes at least 50% of GatorGrader checks, otherwise they will receive 0.
+- **Percentage of Correct Gatorgrader Checks**: Students will receive 1 if their solution passes at least 80% of GatorGrader checks, otherwise they will receive 0.
 Students are encouraged to repeatedly revise their source code in an attempt
 to get their GitHub Actions CI build to pass.

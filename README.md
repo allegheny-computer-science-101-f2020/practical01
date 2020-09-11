@@ -29,16 +29,10 @@ software development programs such as a "terminal window" and the "Docker Deskto
 
 Designed for use with [GitHub Classroom](https://classroom.github.com/) and
 [GatorGrader](https://github.com/GatorEducator/gatorgrader/), this repository
-contains the solution for a practical assignment in an introductory computer
+contains the starter materials for a practical assignment in an introductory computer
 science class that uses the Java programming language. The GitHub Actions Continuous Integration (CI) builds for
 this repository will pass, as evidenced by a green &#x2714; instead of a red
-&#x2717; appearing in the commit logs. An instructor would use this repository
-to create a "starter" repository with purposefully omitted features that a
-student would then need to add in order to achieve the stated learning
-objectives. Please bear in mind that much of the content in this document is
-written in its current form under the assumption that it will also accompany the
-"starter" repository that an instructor shares with a student through the use of
-[GitHub Classroom](https://classroom.github.com/).
+&#x2717; appearing in the commit logs. 
 
 This assignment requires a programmer to implement and test a Java program,
 called `Swap`, that will produce six lines of output. For this assignment, the

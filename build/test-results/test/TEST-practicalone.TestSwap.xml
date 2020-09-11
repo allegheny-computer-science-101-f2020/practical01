@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="practicalone.TestSwap" tests="3" skipped="0" failures="0" errors="0" timestamp="2020-09-10T17:54:04" hostname="adae7a21da7d" time="0.005">
+  <properties/>
+  <testcase name="testSwapFirstSmallerThanSecond" classname="practicalone.TestSwap" time="0.004"/>
+  <testcase name="testSwapFirstLargerThanSecond" classname="practicalone.TestSwap" time="0.0"/>
+  <testcase name="testValuesEqualNoSwapEvident" classname="practicalone.TestSwap" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

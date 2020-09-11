@@ -1,0 +1,49 @@
+---
+name: cs101f2020-practical01
+break: true
+indent: 4
+---
+
+# Learn more about GatorGrader and its supported checks by visiting this web site:
+# https://github.com/GatorEducator/gatorgrader
+
+# Explanation:
+# --> a check without an "--exact" runs a count for an entity as an "at least"
+# --> checks below a file in a specified directory are for that specific file and directory
+# --> checks that appear stand-alone are for an entire Git repository
+
+# --> check the source code for various characteristics
+src/main:
+    java:
+        practicalone/Swap.java:
+            ConfirmFileExists
+            CountSingleLineComments --language Java --count 2
+            CountMultipleLineComments --language Java --count 3
+            MatchFileFragment --fragment "TODO" --count 0 --exact
+            MatchFileFragment --fragment "Add Your Name Here" --count 0 --exact
+            MatchFileFragment --fragment "package practicalone" --count 1 --exact
+            MatchFileFragment --fragment "println(" --count 6
+
+# --> check the source code for various characteristics
+src/test:
+    java:
+        practicalone/TestSwap.java:
+            ConfirmFileExists
+            CountSingleLineComments --language Java --count 3
+            CountMultipleLineComments --language Java --count 1
+            MatchFileFragment --fragment "TODO" --count 0 --exact
+            MatchFileFragment --fragment "Add Your Name Here" --count 0 --exact
+            MatchFileFragment --fragment "package practicalone" --count 1 --exact
+            MatchFileFragment --fragment "@Test" --count 3
+
+# --> check that the number of commits in the Git repository is beyond a threshold
+CountCommits --count 5
+
+# --> check that the program executes correctly and produces exactly 4 lines of output
+ExecuteCommand --command "gradle build"
+ExecuteCommand --command "gradle -q --console plain run"
+CountCommandOutput --command "gradle -q --console plain run" --count 6 --exact
+
+# --> check that the program produces the output with specific fragments:
+MatchCommandFragment --command "gradle -q --console plain run" --fragment "Values before the swap" --count 1 --exact
+MatchCommandFragment --command "gradle -q --console plain run" --fragment "Values after the swap" --count 1 --exact
